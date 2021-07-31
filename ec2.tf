@@ -22,8 +22,8 @@ resource "aws_instance" "web" {
 variable "instance_type" {
    type = map
    default = {
-     default = "t2.micro"
-     dev     = "t2.nano"
+     default = "t2.nano"
+     dev     = "t2.micro"
      prod    = "t2.large"
  }
 }
